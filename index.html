@@ -13,30 +13,40 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      height: 100vh;
+      justify-content: flex-start;
+      min-height: 100vh;
       text-align: center;
     }
+
     header {
+      width: 100%;
       background-color: #222;
       color: white;
-      padding: 15px;
+      padding: 15px 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      box-sizing: border-box;
     }
+
+    .logo {
+      font-size: 1.5em;
+    }
+
     .nav-tabs a {
       color: white;
       text-decoration: none;
       margin-left: 20px;
     }
+
     .nav-tabs a:hover {
       text-decoration: underline;
     }
+
     main {
-      padding: 60px 20px;
-      text-align: center;
+      padding: 40px 20px;
     }
+
     .message-button {
       background-color: #222;
       color: white;
@@ -47,24 +57,39 @@
       cursor: pointer;
       margin-top: 30px;
     }
+
     .message-button:hover {
       background-color: #444;
+    }
+
     img {
       max-width: 100%;
       height: auto;
     }
+
     h1 {
       margin-top: 20px;
       font-size: 2rem;
     }
   </style>
 </head>
-  <div class="logo">Unity C&D </div>
+<body>
+
+  <header>
+    <div class="logo">Unity C&D</div>
     <nav class="nav-tabs">
       <a href="index.html">Home</a>
       <a href="contact.html">Leave Us a Message</a>
-<body>
-  <img src="./worker.jpg" alt="Construction Worker" />
-  <h1>Welcome to Construction and Design</h1>
+    </nav>
+  </header>
+
+  <main>
+    <img src="./worker.jpg" alt="Construction Worker" />
+    <h1>Welcome to Construction and Design</h1>
+    <a href="contact.html">
+      <button class="message-button">Leave Us a Message</button>
+    </a>
+  </main>
+
 </body>
 </html>
