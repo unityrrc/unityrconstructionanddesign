@@ -246,18 +246,22 @@
   </div>
   
 <script>
-  const navMenu = document.getElementById('navMenu');
-  const toggleButton = document.querySelector('.menu-toggle');
+  document.addEventListener('DOMContentLoaded', function () {
+    const navMenu = document.getElementById('navMenu');
+    const toggleButton = document.querySelector('.menu-toggle');
 
-  function toggleMenu() {
-    navMenu.classList.toggle('open');
-  }
-
-  // Click outside to close
-  document.addEventListener('click', function (e) {
-    if (!navMenu.contains(e.target) && !toggleButton.contains(e.target)) {
-      navMenu.classList.remove('open');
+    function toggleMenu() {
+      navMenu.classList.toggle('open');
     }
+
+    toggleButton.addEventListener('click', toggleMenu);
+
+    // Optional: Close menu when clicking outside
+    document.addEventListener('click', function (e) {
+      if (!navMenu.contains(e.target) && !toggleButton.contains(e.target)) {
+        navMenu.classList.remove('open');
+      }
+    });
   });
 </script>
  
