@@ -24,7 +24,8 @@ h1 {
 }
 
 /* === Page Layout === */
-.page-wrapper {
+.page-wrapper { padding-top: 100px; /* Adjust depending on header height */
+}
   background: #ffffff;
   max-width: 1100px;
   margin: 0 auto;
@@ -37,16 +38,20 @@ h1 {
 
 /* === Header & Navigation === */
 header {
-  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   background-color: #2193ad;
   color: white;
   padding: 15px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
   box-sizing: border-box;
-  z-index: 10;
+  z-index: 1000;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
