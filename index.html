@@ -49,6 +49,26 @@
   font-size: 1.1rem;
   color: #555;
 }
+.showcase {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #5e4661;
+  text-align: center;
+  margin: 60px auto 30px auto;
+  position: relative;
+  width: fit-content;
+}
+.showcase::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 60%;
+  background: linear-gradient(to right, #5e4661, #66bb6a);
+  margin: 10px auto 0 auto;
+  border-radius: 2px;
+}
 
     /* page wrapper -------------- */
 
@@ -267,8 +287,7 @@
 
   <main>
     <div style="margin-top: 0px;">
-      <p class="project-note"> 
-        "Our work Showcase" 
+      <h2 class"Showcase">SHOWCASE</h2>
 </div>
 
     <hr style="width: 90%; margin: 30px auto; border: 1px solid #ccc;" />
