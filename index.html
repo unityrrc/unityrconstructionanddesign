@@ -28,11 +28,16 @@
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
-.intro-text h1 {
-  width: 80%;
-  padding: 10px; /* gives breathing room on the text side */
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers h1 and p */
+  text-align: center;  /* centers the text inside h1 and p */
+  padding: 20px;
   box-sizing: border-box;
+}
+.intro-text h1 {
+  padding: 10px; /* gives breathing room on the text side */
 }
 
 .intro-text p {
