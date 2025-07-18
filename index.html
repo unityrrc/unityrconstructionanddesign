@@ -22,21 +22,6 @@
   gap: 20px;
   text-align: left;
 }
-@media (max-width: 768px) {
-  .intro-section {
-    flex-direction: column;
-    padding: 0 20px;
-  }
-    .intro-logo {
-    max-width: 100% !important;
-    min-width: unset;
-  }
-  .intro-text {
-    max-width: 100%;
-    align-items: center;
-    text-align: center;
-}
-}
 
 .intro-top{
   margin-top: 40px; /*adjusts top margin*/
@@ -80,7 +65,21 @@
   margin-bottom: 80px;
   align-self: center;
 }
-    }
+    @media (max-width: 768px) {
+  .intro-section {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+    .intro-logo {
+    max-width: 100% !important;
+    min-width: unset;
+  }
+  .intro-text {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+}
+}
 /* SHOW CASE SECTION -----------------  */
 .showcase-section {
   background-color: #cfcfcf; /* sleek light gray */
