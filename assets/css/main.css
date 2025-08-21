@@ -29,7 +29,10 @@
 		font: inherit;
 		vertical-align: baseline;
 	}
-
+	.logo-small {
+  width: 200px;
+  height: auto;
+				}
 	article, aside, details, figcaption, figure,
 	footer, header, hgroup, menu, nav, section {
 		display: block;
@@ -2443,6 +2446,15 @@
 
 /* Image */
 
+			.wide-short {
+  width: 100%;      /* Makes the image as wide as its container */
+  max-width: 1200px;/* Optional: limits max width */
+  height: 400px;    /* Makes the image short */
+  object-fit: cover;/* Crops the image to fit the box */
+  display: block;
+  margin: 0 auto;   /* Centers the image if max-width is used */
+}
+
 	.image {
 		border-radius: 6px;
 		border: 0;
@@ -2985,11 +2997,18 @@
 					}
 
 					#header nav > ul > li a {
-						display: inline-block;
+						background: #fff;
+  						color: #333 !important;
+						border-radius: 6px;
+  						box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+						display: flex;
+						align-items: center;
+						text-align: center;
+						justify-content: center;
 						height: 2em;
 						line-height: 1.95em;
 						padding: 0 1em;
-						border-radius: 6px;
+						gap: 0.3em;
 					}
 
 					#header nav > ul > li a:not(.button) {
@@ -3001,7 +3020,7 @@
 
 						#header nav > ul > li a:not(.button).icon:before {
 							color: #999;
-							margin-right: 0.5em;
+							margin-right: 0 !important;
 						}
 
 					#header nav > ul > li:first-child {
@@ -3163,7 +3182,7 @@
 	#banner {
 		background-attachment: scroll,							fixed;
 		background-color: #666;
-		background-image: url("images/overlay.png"), url("../../images/banner.jpg");
+		background-image: url("images/DECK1.jpg"), url("../../images/DECK1.jpg");
 		background-position: top left,						center center;
 		background-repeat: repeat,							no-repeat;
 		background-size: auto,							cover;
