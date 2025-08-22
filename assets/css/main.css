@@ -30,7 +30,8 @@
 		vertical-align: baseline;
 	}
 	.logo-small {
-  width: 200px;
+   filter: drop-shadow(0 0 10px rgba(255,255,255,0.5));
+  width: 300px;
   height: auto;
 				}
 	article, aside, details, figcaption, figure,
@@ -3182,10 +3183,11 @@
 	#banner {
 		background-attachment: scroll,							fixed;
 		background-color: #666;
-		background-image: url("images/DECK1.jpg"), url("../../images/DECK1.jpg");
-		background-position: top left,						center center;
-		background-repeat: repeat,							no-repeat;
-		background-size: auto,							cover;
+		background-image: linear-gradient(rgba(120, 120, 120, 1.0), rgba(0,0,0,0.4)), 
+		url("images/BGbanner.jpg"), url("../../images/BGbanner.jpg");
+		background-position:						center center;
+		background-repeat: 	no-repeat;
+		background-size: 	cover;
 		color: #fff;
 		padding: 12em 0 20em 0;
 		text-align: center;
