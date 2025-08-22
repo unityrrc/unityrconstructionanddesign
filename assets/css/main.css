@@ -3324,7 +3324,18 @@
 					margin-left: 0;
 					padding-left: 0;
 				}
+.image-row {
+  display: flex;
+  justify-content: center;  /* center the row */
+  gap: 10px;                /* space between images */
+}
 
+.image-row img {
+  width: 30%;        /* each image takes 30% of parent width */
+  height: auto;
+  object-fit: cover;
+  max-height: 250px; /* cap the height */
+}
 /* CTA */
 
 	#cta {
