@@ -3090,7 +3090,11 @@
 			animation: none;
 			background: none;
 			color: rgba(255, 255, 255, 0.75);
-			position: absolute;
+			position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 1000;
 		}
 
 			#header.alt nav > ul > li a:not(.button).icon:before {
