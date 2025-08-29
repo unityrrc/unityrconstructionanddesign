@@ -29,6 +29,22 @@
 		font: inherit;
 		vertical-align: baseline;
 	}
+
+	  .social-links {
+    display: flex;
+    align-items: center;   /* keeps everything lined up */
+    gap: 12px;             /* spacing between icons */
+    line-height: 0;        /* removes odd vertical gaps */
+	justify-content: center;
+  }
+  .social-links img {
+    width: 32px;
+    height: 32px;
+    display: block;
+  }
+   .social-links img {
+    filter: grayscale(100%) brightness(50%);
+   }
 	.logo-small {
    filter: drop-shadow(0 0 10px rgba(255,255,255,0.3));
   width: 300px;
