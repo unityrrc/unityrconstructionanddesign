@@ -55,6 +55,17 @@
 		display: block;
 	}
 
+	.call-link {
+  color: #0066cc;       /* nice blue */
+  font-weight: bold;    /* make it pop */
+  text-decoration: none; /* remove underline */
+}
+
+.call-link:hover {
+  color: #009900;       /* green on hover */
+  text-decoration: underline; /* underline on hover if you want */
+}
+
 	body {
 		line-height: 1;
 	}

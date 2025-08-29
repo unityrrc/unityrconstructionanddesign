@@ -3,6 +3,44 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+(function () {
+  // Defensive "closest" for older browsers/elements PHONE CONVERSIONS
+  function findCallLink(start) {
+    var n = start;
+    while (n && n !== document) {
+      if (
+        n.tagName &&
+        n.tagName.toLowerCase() === 'a' &&
+        n.getAttribute &&
+        n.getAttribute('href') &&
+        n.getAttribute('href').indexOf('tel:') === 0 &&
+        n.classList &&
+        n.classList.contains('call-link')
+      ) {
+        return n;
+      }
+      n = n.parentNode;
+    }
+    return null;
+  }
+
+  document.addEventListener('click', function (ev) {
+    var a = findCallLink(ev.target);
+    if (!a) return;
+
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'call_click', {
+        event_category: 'lead',
+        event_label: a.getAttribute('href'),
+        value: 1
+      });
+    } else {
+      // Not fatal—just lets you know if GA4 isn't on the page yet
+      console.warn('GA4 gtag() not found when call was clicked.');
+    }
+  }, false);
+})();
+
 
 (function($) {
 
