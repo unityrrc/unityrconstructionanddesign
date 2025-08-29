@@ -3965,3 +3965,11 @@ z-index: 1000;
 			}
 
 	}
+
+	#header,
+#header.alt,
+#header.scrolled,
+#header.reveal {
+  background: transparent !important;
+  box-shadow: none !important;
+}
